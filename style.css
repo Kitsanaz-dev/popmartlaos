@@ -1,0 +1,239 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-left .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000; /* Red color for the logo */
+  }
+  
+  .navbar-center ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-center ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar-center ul li a {
+    text-decoration: none;
+    color: #000; /* Black text */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .search-container input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    width: 150px;
+  }
+  
+  .search-container .search-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: -25px; /* Overlap the search icon */
+    color: #333;
+  }
+  
+  .navbar-right a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right .cart-link {
+    font-size: 18px;
+  }
+  
+  /* Hover effects */
+  .navbar-center ul li a:hover,
+  .navbar-right a:hover {
+    color: #ff0000; /* Highlight links in red */
+  }
+  
+  .ads-box {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .shopnow {
+    text-align: center;
+    background-color: red;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+  }
+
+  .shopnow:hover {
+    background-color: rgb(125, 20, 20);
+    color: rgb(255, 255, 255);
+  }
+
+  .shopnow-text {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+
+
+
+  /* footer */
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.social-banner {
+  margin-top: 60px;
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: left;
+    padding: 15px;
+    padding-left: 435px;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #808080;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    background-color: transparent;
+    color: #fff;
+}
+
+.newsletter button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #808080;
+}
+
+.region-selector {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #1a1a1a;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.region-link {
+  color: white;
+}
+
+.flag-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: #808080;
+    font-size: 12px;
+}
