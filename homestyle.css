@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
 
 
 .ads-box {

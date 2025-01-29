@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New feature</title>
+    <link rel="stylesheet" href="navbarstyle.css">
+    <link rel="stylesheet" href="fontstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <h1>
-        New feature
-    </h1>
-    <h2>hello</h2>
+      <!-- navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        <a href="home.html"><img src="img/popmartlogo.png" alt="logo"></a>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <nav>
+        <ul>
+          <li><a href="newfeature.html">NEW & FEATURED</a></li>
+          <li><a href="categories.html">CATEGORIES</a></li>
+          <li><a href="characters.html">CHARACTERS</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="navbar-right">
+      <div class="search-container">
+        <input type="text" placeholder="SEARCH">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+      <a href="#" class="user-link">
+        <i class="fas fa-user"></i> <span>Sign in / Register</span>
+      </a>
+      <a href="#" class="cart-link">
+        <i class="fas fa-shopping-cart"></i> <span>0</span>
+      </a>
+    </div>
+  </header>
+  <h1 style="margin-top: 100px;">New & feature</h1>
 </body>
 </html>
