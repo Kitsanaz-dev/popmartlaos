@@ -94,12 +94,14 @@ body {
 }
 
 .search-container input {
-  padding: 5px 10px;
-  border: 1px solid #ddd;
+  background-color: #f5f4f4;
+  padding: 8px 10px;
+  border: none;
   border-radius: 20px;
   outline: none;
   font-size: 14px;
-  width: 150px;
+  font-weight: 500;
+  width: 200px;
 }
 
 .search-container .search-btn {
@@ -130,6 +132,12 @@ body {
 .navbar-right a:hover {
   color: #ff0000;
   /* Highlight links in red */
+}
+
+.user-link, .cart-link {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing */
 }
 
 .ads-box {
