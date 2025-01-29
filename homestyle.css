@@ -24,6 +24,11 @@ body {
   /* Reduce padding */
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .navbar-left .logo {
@@ -132,7 +137,7 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
   position: relative;
 }
