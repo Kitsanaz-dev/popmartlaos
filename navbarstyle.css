@@ -1,0 +1,126 @@
+/* Navbar */
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    /* Adjust based on content */
+    align-items: center;
+    padding: 10px 20px;
+    /* Reduce padding */
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .navbar-left .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
+  /* Make the navbar center flex-grow */
+  .navbar-center {
+    flex-grow: 1;
+  }
+  
+  .navbar-center ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    /* Align items to the left */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-center ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar-center ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .navbar-center ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .navbar-center ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .search-container input {
+    background-color: #f5f4f4;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    width: 200px;
+  }
+  
+  .search-container .search-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: -25px;
+    /* Overlap the search icon */
+    color: #333;
+  }
+  
+  .navbar-right a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right .cart-link {
+    font-size: 18px;
+  }
+  
+  /* Hover effects */
+  .navbar-center ul li a:hover,
+  .navbar-right a:hover {
+    color: #ff0000;
+    /* Highlight links in red */
+  }
+  
+  .user-link, .cart-link {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjust spacing */
+  }
