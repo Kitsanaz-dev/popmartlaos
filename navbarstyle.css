@@ -91,6 +91,13 @@
     font-weight: 500;
     width: 200px;
   }
+
+  .search-container input::placeholder {
+    color: #d3cfcf;
+    font-size: 14px;
+    font-weight: 700;
+}
+
   
   .search-container .search-btn {
     background: none;
