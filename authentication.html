@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in or Register</title>
-    <link rel="stylesheet" href="navbarstyle.css">
-    <link rel="stylesheet" href="fontstyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in or Register</title>
+  <link rel="stylesheet" href="navbarstyle.css">
+  <link rel="stylesheet" href="fontstyle.css">
+  <link rel="stylesheet" href="authstyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script defer src="authscript.js"></script>
 </head>
+
 <body>
-      <!-- navbar test -->
+      <!-- navbar -->
   <header class="navbar">
     <div class="navbar-left">
       <div class="logo">
@@ -43,6 +47,44 @@
       </a>
     </div>
   </header>
-  <h1 style="margin-top: 100px;">Sign in or Register</h1>
+
+  <!-- Register Form -->
+  <div class="auth-container">
+    <h2>SIGN IN OR REGISTER</h2>
+
+    <!-- country selector -->
+    <div class="custom-select">
+      <div class="selected-option">
+        <img src="https://flagcdn.com/w40/la.png" alt="Laos Flag">
+        <span>Laos</span>
+        <i class="arrow"></i>
+      </div>
+      <ul class="options">
+        <li data-value="la">
+          <img src="https://flagcdn.com/w40/la.png" alt="Laos Flag"> Laos
+        </li>
+        <li data-value="us">
+          <img src="https://flagcdn.com/w40/us.png" alt="USA Flag"> United States
+        </li>
+        <li data-value="th">
+          <img src="https://flagcdn.com/w40/th.png" alt="Thailand Flag"> Thailand
+        </li>
+      </ul>
+    </div>
+
+    <input type="email" placeholder="Enter your e-mail address" class="email-input">
+    <button class="continue-btn">CONTINUE</button>
+    <div class="or-divider">──── Join With ────</div>
+    <div class="social-login">
+      <i class="fab fa-google"></i>
+      <i class="fab fa-apple"></i>
+    </div>
+    <p class="terms">
+      By continuing, you agree to our <a href="#">Platform’s Term of Service</a> and
+      <a href="#">Privacy Policy</a>
+    </p>
+  </div>
+
 </body>
+
 </html>

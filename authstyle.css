@@ -1,0 +1,157 @@
+/* Authentication Form */
+.auth-container {
+    margin: 175px auto;
+    width: 500px;
+    background: white;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Custom Dropdown */
+.custom-select {
+    position: relative;
+    width: 100%; /* Same width as text input and button */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    padding: 12px; /* Same padding as other elements */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Selected Option */
+.selected-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 100%; /* Ensure the selected option fills the width */
+}
+
+/* Ensure consistent sizing for the image in the selector */
+.selected-option img {
+    width: 25px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    display: inline-block;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Options List */
+.options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.options li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.options li img {
+    width: 25px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.options li:hover {
+    background: #f1f1f1;
+}
+
+/* Open dropdown */
+.custom-select.active .options {
+    display: block;
+}
+
+.custom-select.active .arrow {
+    transform: rotate(-135deg);
+}
+
+/* Email Input */
+.email-input {
+    width: 100%; /* Same width as other elements */
+    padding: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Continue Button */
+.continue-btn {
+    width: 100%; /* Same width as other elements */
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.continue-btn:hover {
+    background-color: #333;
+}
+
+/* OR Divider */
+.or-divider {
+    margin: 15px 0;
+    color: #888;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Social Login */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 24px;
+}
+
+/* Terms & Privacy */
+.terms {
+    font-size: 12px;
+    color: gray;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.terms a {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
