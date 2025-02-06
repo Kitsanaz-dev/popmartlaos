@@ -185,10 +185,9 @@
 /* explore the monsters */
 
 .explore {
-  width: 82%;
+  width: 80%;
   margin: auto;
   padding: 20px;
-  background-color: #fff;
   justify-content: center;
 }
 
@@ -198,6 +197,19 @@
   align-items: center;
   margin-bottom: 10px;
 }
+
+.product-item-explore {
+  display: flex;
+  flex-direction: column; /* Stacks image and title vertically */
+  align-items: center; /* Centers content */
+  text-align: center; /* Ensures text is centered */
+}
+
+.explore-title {
+  display: block; /* Ensures it appears below */
+  margin-top: 10px; /* Adds spacing */
+}
+
 
 /* .title {
   font-size: 22px;
