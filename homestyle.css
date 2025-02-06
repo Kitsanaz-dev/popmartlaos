@@ -72,7 +72,7 @@
 
 .more-link {
   font-size: 14px;
-  text-decoration: none;
+  text-decoration: underline;
   color: #777;
 }
 
@@ -90,7 +90,8 @@
 
 .product-item-new-arrival {
   min-width: 25%;
-  height: 400px;
+  height: 500px;
+  padding: 10px;
   /* Adjust as needed */
   background-color: #f5f5f5;
   display: flex;
@@ -118,6 +119,7 @@
 
 /* Product Card */
 .product-card {
+  width: 380px;
   background: white;
   flex: 0 0 auto;
   border-radius: 20px;
@@ -179,7 +181,20 @@
   margin-top: 5px;
 }
 
+.product-list-explore {
+  display: flex;
+  gap: 20px;
+}
 
+.product-item-explore {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.product-item-explore img {
+  width: 100%;
+  object-fit: cover;
+}
 
 
 /* explore the monsters */
@@ -199,10 +214,10 @@
 }
 
 .product-item-explore {
+  width: 100%;
   display: flex;
   flex-direction: column; /* Stacks image and title vertically */
-  align-items: center; /* Centers content */
-  text-align: center; /* Ensures text is centered */
+  text-align: start; /* Ensures text is centered */
 }
 
 .explore-title {
@@ -210,47 +225,73 @@
   margin-top: 10px; /* Adds spacing */
 }
 
+/* meet-our-artist-section */
+.artists {
+  width: 82%;
+  margin: auto;
+  text-align: start;
+  padding: 40px 20px;
+}
 
-/* .title {
-  font-size: 22px;
+.section-title {
+  font-size: 24px;
   font-weight: bold;
   color: red;
+  text-align: start;
 }
 
-.more-link {
-  font-size: 14px;
-  text-decoration: none;
-  color: #777;
+.section-divider {
+  width: 100%;
+  margin: 10px auto 30px;
+  border: 1px solid #000;
 }
 
-.more-link:hover {
-  color: black;
-} */
-
-.product-list-explore {
+.artists-container {
   display: flex;
-  gap: 15px;
-  overflow-x: auto;
-  /* Allows horizontal scrolling */
-  padding-bottom: 10px;
-}
-
-.product-item-explore {
-  min-width: 33%;
-  height: 400px;
-  /* Adjust as needed */
-  background-color: #f5f5f5;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-.product-item-explore img {
-  max-width: 100%;
-  max-height: 100%;
+.artist-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.artist-card:hover {
+  transition: 0.4s;
+  scale: 1.1;
+}
 
+.artist-card img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.artist-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.artist-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.artist-info p {
+  margin: 2px 0 0;
+  font-size: 12px;
+}
 
 
 
